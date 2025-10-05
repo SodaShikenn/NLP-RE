@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasRel关系抽取演示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/alpinejs/3.13.0/cdn.min.js" defer></script>
+</head>
+<body class="bg-gray-100" x-data="data()">
+    <div class="max-w-xl w-full mx-auto space-y-3 mt-24 p-8 bg-white shadow-lg rounded-lg">
+        <h2 class="text-xl font-medium">CasRel关系抽取演示</h2>
+        <textarea x-model="text" class="border w-full h-20 text-sm px-3 py-1.5 rounded" placeholder="请输入文本"></textarea>
+        <div class="flex">
+            <button x-on:click="post()" class="ml-auto px-3 py-1 text-sm bg-blue-500 hover:bg-blue-600 text-white rounded">立即提交</button>
+        </div>
+        <pre class="border w-full h-48 px-3 py-1.5 rounded text-sm whitespace-pre-wrap" x-text="result"></pre>
+        <div class="text-sm text-gray-600 leading-6">
+            <p><b>示例：</b></p>
+            <p>俞敏洪，出生于1962年9月4日的江苏省江阴市，大学毕业于北京大学西语系。</p>
+            <p>周杰伦将于7月15日发布2022新专辑《最伟大的作品》。</p>
+        </div>
+    </div>
+
+    <script>
+        function data(){
+            return {
+                text: '',
+                result: '',
+                post(){
+                    if(!this.text){
+                        alert('请先输入内容')
+                        return false
+                    }
+                    fetch('/query', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                text: this.text,
+                            }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        this.result = JSON.stringify(data)
+                    })
+                    .catch(error=>{
+                        console.log(error)
+                    })
+                }
+            }
+        }
+    </script>
+</body>
+</html>

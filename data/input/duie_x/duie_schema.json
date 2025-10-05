@@ -1,0 +1,18 @@
+{"object_type": {"@value": "学校"}, "predicate": "毕业院校", "subject_type": "人物"}
+{"object_type": {"@value": "音乐专辑"}, "predicate": "所属专辑", "subject_type": "歌曲"}
+{"object_type": {"@value": "人物"}, "predicate": "作者", "subject_type": "图书作品"}
+{"object_type": {"inArea": "地点", "@value": "Date"}, "predicate": "上映时间", "subject_type": "影视作品"}
+{"object_type": {"@value": "人物"}, "predicate": "编剧", "subject_type": "影视作品"}
+{"object_type": {"@value": "人物"}, "predicate": "歌手", "subject_type": "歌曲"}
+{"object_type": {"@value": "人物"}, "predicate": "作词", "subject_type": "歌曲"}
+{"object_type": {"@value": "企业"}, "predicate": "出品公司", "subject_type": "影视作品"}
+{"object_type": {"@value": "人物"}, "predicate": "导演", "subject_type": "影视作品"}
+{"object_type": {"@value": "人物"}, "predicate": "作曲", "subject_type": "歌曲"}
+{"object_type": {"@value": "人物"}, "predicate": "主演", "subject_type": "影视作品"}
+{"object_type": {"@value": "日期"}, "predicate": "成立日期", "subject_type": "机构"}
+{"object_type": {"@value": "国家"}, "predicate": "国籍", "subject_type": "人物"}
+{"object_type": {"@value": "日期"}, "predicate": "出生日期", "subject_type": "人物"}
+{"object_type": {"@value": "网站"}, "predicate": "连载网站", "subject_type": "网络小说"}
+{"object_type": {"@value": "文本"}, "predicate": "民族", "subject_type": "人物"}
+{"object_type": {"@value": "出版社"}, "predicate": "出版社", "subject_type": "图书作品"}
+{"object_type": {"@value": "地点"}, "predicate": "出生地", "subject_type": "人物"}
