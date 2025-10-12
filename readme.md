@@ -4,6 +4,6 @@
 
 本モデルを選定した理由は、その代表性と認知度の高さに加え、コーディングスキルの向上にも役立つためです。
 
-参考論文：A Novel Cascade Binary Tagging Framework for Relational Triple Extraction　（https://arxiv.org/abs/1909.03227）
+参考論文：A Novel Cascade Binary Tagging Framework for Relational Triple Extraction　(https://arxiv.org/abs/1909.03227)
 
 参考コード：https://github.com/weizhepei/CasRel
