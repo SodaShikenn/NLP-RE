@@ -1,9 +1,9 @@
-This project employs the CasRel model, one of several relation extraction models published in 2019. Although new models have been proposed in recent years, the industry has yet to establish a unified solution. The reason for selecting this model is its representativeness and recognition, as well as its ability to enhance coding skills.
+このプロジェクトでは、2019年に発表された関係抽出モデルの一つである CasRelモデル を採用しています。
 
-Paper Name：A Novel Cascade Binary Tagging Framework for Relational Triple Extraction
+近年では新しいモデルも提案されていますが、業界ではまだ統一的な解決策が確立されていません。
 
-Model Name：CasRel
+本モデルを選定した理由は、その代表性と認知度の高さに加え、コーディングスキルの向上にも役立つためです。
 
-Paper Link：https://arxiv.org/abs/1909.03227
+参考論文：A Novel Cascade Binary Tagging Framework for Relational Triple Extraction　（https://arxiv.org/abs/1909.03227）
 
-Code Link：https://github.com/weizhepei/CasRel （TensorFlow、English Dataset）
+コード：https://github.com/weizhepei/CasRel
